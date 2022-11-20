@@ -37,6 +37,7 @@ request('https://www.reddit.com/r/nosleep/comments/yyv149/i_recorded_something_v
         postText: texts
     })
 
-    console.log(JSON.stringify(posts))
-
+    // console.log(JSON.stringify(posts))
+    var postsJson = JSON.stringify(posts)
+    fs.writeFile('CreepyPastas.txt', postsJson, function(err){console.log(err)})
 })
