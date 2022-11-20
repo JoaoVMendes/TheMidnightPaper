@@ -8,7 +8,7 @@
         <Transition enter-active-class="animate__animated animate__fadeIn animate__delay-1s animate__slower" 
                     leave-active-class="animate__animated animate__fadeOut" 
                     mode="out-in" appear>
-          <CreepyInfo></CreepyInfo>
+          <CreepyInfo :title="bestPost.title" :author="bestPost.author" :upvotes="bestPost.upvotes"></CreepyInfo>
         </Transition>
         <Transition enter-active-class="animate__animated animate__fadeIn animate__delay-2s animate__slower" 
                     leave-active-class="animate__animated animate__fadeOut" 
@@ -20,9 +20,7 @@
                   leave-active-class="animate__animated animate__zoomOut" 
                   mode="out-in" appear>
         <button v-if="showBackTop" class="backTop" @click="backTop">
-    
             <i class="fa fa-chevron-up"></i>
-    
         </button>
       </transition>
     </div>
@@ -48,6 +46,15 @@ export default{
   data(){
     return{
       showBackTop: false,
+
+      posts:[],
+
+      bestPost:{
+        title: 'The Rake',
+        upvotes: '2.3k',
+        author: 'Unknown author',
+        text:[],
+      },
     }
   },
 
