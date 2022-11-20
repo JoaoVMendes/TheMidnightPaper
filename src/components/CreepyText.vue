@@ -3,7 +3,12 @@
         <div v-for="(t,index) in texts" :key="index">
             <p v-if="index == 0" class="text" style="margin-top: 0px"><span class="initial">{{ t[0] }}</span>{{ t.substring(1, t.length) }}</p>
             <p v-else class="text">{{ t }}</p>
+            
         </div>
+        <h4 class="text">&#10022;</h4>
+        <p class="textRef text">Did you like the story?</p>
+        <p class="textRef text">Then upvote <a href="https://creepypasta.fandom.com/wiki/The_Rake">here</a> or die.</p>
+        <h4 class="text">&#10022;</h4>
     </div>
 </template>
 
@@ -91,6 +96,29 @@ p{
   line-height: 20px;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+p.textRef{
+  text-align: center;
+}
+
+a:link {
+  color: crimson;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(148, 0, 30);
+  background-color: transparent;
+  text-decoration:underline;
+  text-decoration-color: rgb(148, 0, 30);
+}
+
+a:hover {
+  color: rgb(201, 0, 0);
+  background-color: transparent;
+  text-decoration: underline;
 }
 
 /* p::first-letter {

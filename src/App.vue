@@ -15,9 +15,6 @@
                     mode="out-in" appear>
           <CreepyText></CreepyText>
         </Transition>
-        <!-- <h4 class="text">&#10022;</h4> -->
-        <!-- <p class="text">Did you like the story?</p> -->
-        <!-- <p class="text">Then upvote <a href="https://creepypasta.fandom.com/wiki/The_Rake">here</a> or die.</p> -->
       </div>
       <transition enter-active-class="animate__animated animate__bounceIn" 
                   leave-active-class="animate__animated animate__zoomOut" 
@@ -89,7 +86,7 @@ export default{
    url(./fonts/Witch-of-Thebes.ttf) format("truetype");
 } */
 .text{
-  color: rgb(177, 13, 13);
+  color: rgb(95, 95, 95);
   /* background-color: black; */
 }
 
@@ -135,11 +132,11 @@ p{
   /*Glow ffect */
   /* box-shadow: 0 0 20px rgba(255, 0, 51, 0.8),
               0 0 30px rgba(255, 119, 119, 0.6); */
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.753);
+  box-shadow: 0px 0px 10px 8px rgba(0, 0, 0, 0.753);
   width: 45px;
   height: 45px;
-  bottom: 22px;
-  right: 30px;
+  bottom: 15px;
+  right: 48.25%;
   z-index: 1;
 }
 
