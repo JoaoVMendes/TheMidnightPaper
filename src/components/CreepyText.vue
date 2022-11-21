@@ -58,6 +58,10 @@ span.initial {
   font-size: 475%;
   font-weight: lighter;
   font-family: mevno1;
+  /*Glowing ghostly letter*/
+  /* color: rgb(201, 253, 236);
+  text-shadow: 0 0 15px rgba(45, 224, 180, 0.8),
+              0 0 15px rgba(170, 255, 237, 0.6); */
 }
 
 p {
@@ -74,22 +78,23 @@ p.textRef {
 }
 
 a:link {
-  color: crimson;
+  color: rgb(179, 179, 179);
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: rgb(148, 0, 30);
+  color: rgb(49, 49, 49);
   background-color: transparent;
-  text-decoration: underline;
-  text-decoration-color: rgb(148, 0, 30);
 }
 
 a:hover {
-  color: rgb(201, 0, 0);
+  color: rgb(243, 243, 243);
   background-color: transparent;
-  text-decoration: underline;
+  /*Glowing ghostly text*/
+  /* color: rgb(191, 255, 223);
+  text-shadow: 0 0 10px rgba(45, 224, 180, 0.8),
+              0 0 10px rgba(170, 255, 237, 0.6); */
 }
 
 /* p::first-letter {

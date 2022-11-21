@@ -19,7 +19,7 @@
       <transition enter-active-class="animate__animated animate__bounceIn" 
                   leave-active-class="animate__animated animate__zoomOut" 
                   mode="out-in" appear>
-        <button v-if="showBackTop" class="backTop" @click="backTop">
+        <button v-if="showBackTop" class="backTop" @click="backTop" title="Back to the top">
             <i class="fa fa-chevron-up"></i>
         </button>
       </transition>
@@ -172,5 +172,4 @@ p{
   right: 48.25%;
   z-index: 1;
 }
-
 </style>
