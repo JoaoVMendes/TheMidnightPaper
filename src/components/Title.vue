@@ -3,6 +3,8 @@
         <hr>
         <h1 class="title">The Midnight Paper</h1>
         <hr>
+        <h4 class="text">Friday, November 11th, 2023</h4>
+        <hr style="margin-bottom: 25px;">
     </div>
 </template>
 
@@ -12,7 +14,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 @font-face {
   font-family: "FaithCollapsing";
   src: local("FaithCollapsing"),
@@ -30,9 +32,13 @@ h1.title{
   user-select: none;
 }
 
+h4{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 hr{
   width: 95%;
   border-color: rgb(49, 49, 49);
-  margin-bottom: 25px;
 }
 </style>

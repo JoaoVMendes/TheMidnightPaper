@@ -9,7 +9,7 @@
     </div>
     <h4 class="text">&#10022;</h4>
     <p class="textRef text">Did you like the story?</p>
-    <p class="textRef text">Then upvote <a :href="link">here</a> or die.</p>
+    <p class="textRef text">Then upvote <a :href="link">here</a> or else...</p>
     <h4 class="text">&#10022;</h4>
   </div>
 </template>
