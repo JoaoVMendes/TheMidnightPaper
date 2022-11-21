@@ -34,7 +34,7 @@ export default{
 h2{
   font-family: uwch;
   font-size: 30px;
-  font-weight: bolder;
+  font-weight: lighter;
   text-align: center;
 }
 
