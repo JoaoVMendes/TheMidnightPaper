@@ -5,7 +5,7 @@
         <hr>
         <div class="volumeInfo">
           <h4 class="text">VOL. 1</h4>
-          <h4 class="text">Friday, November 11th, 2023</h4>
+          <h4 class="text">{{ date }}</h4>
           <h4 class="text">Price: Free</h4>
         </div>
         <hr style="margin-bottom: 25px;">
@@ -14,7 +14,21 @@
 
 <script lang="ts">
 export default{
+  mounted(){
+    var d = new Date();
+    const dayOfWeekName = new Date().toLocaleString('default', {weekday: 'long'})
+    const monthNames = [ "January", "February", "March", "April", "May", "June",
+                    "July", "August", "September", "October", "November", "December"]
+    const daySulfix = ["st","sd","rd","th","th","th","th","th","th","th","th","th","th","th","th","th",
+                        "th","th","th","th","th","th","th","th","th","th","th","th","th","th","th"]
+    this.date = dayOfWeekName+ ", " + monthNames[d.getMonth()] + " " + d.getDate() + daySulfix[d.getDate()] + ", " + d.getFullYear()
+  },
 
+  data(){
+    return{
+      date: '',
+    }
+  }
 }
 </script>
 
@@ -47,8 +61,8 @@ h1.title{
 }
 
 h4{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 hr{
