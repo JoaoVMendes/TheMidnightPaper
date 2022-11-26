@@ -41,12 +41,13 @@ request('https://www.reddit.com/r/nosleep/top/?t=week', function(err, req, body)
         posts.push({
             postTitle: title,
             postUpvotes: upvotes,
-            postText: texts
+            postUrl: 'https://www.reddit.com' + postUrl,
+            postText: texts,
         })
         // console.log(posts)
 
         //Transfor the post obj into a json obj and save it on a file.
         var postsJson = JSON.stringify(posts)
-        fs.writeFile('CreepyPastas.json', postsJson, function(err){console.log(err)})
+        fs.writeFile('src/CreepyPastas.json', postsJson, function(err){console.log(err)})
     })
 })
