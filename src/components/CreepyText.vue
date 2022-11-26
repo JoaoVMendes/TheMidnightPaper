@@ -1,11 +1,15 @@
 <template>
   <div class="journal">
     <div v-for="(t, index) in texts" :key="index">
-      <p v-if="index == 0" class="text" style="margin-top: 0px"><span class="initial">{{ t[0] }}</span>{{ t.substring(1,
-          t.length)
-      }}</p>
+      <p v-if="index == 0 && isLetter(t[0])" class="text" style="margin-top: 0px">
+        <span class="initial">{{ t[0] }}</span>
+        {{ t.substring(1, t.length) }}
+      </p>
+      <p v-else-if="index == 0 && isLetter(t[0]) == null"  class="text" style="margin-top: 0px">
+        <span class="initial">{{t[1]}}</span>
+        {{ t.substring(2, t.length) }}
+      </p>
       <p v-else class="text">{{ t }}</p>
-
     </div>
     <h4 class="text">&#10022;</h4>
     <p class="textRef text">Did you like the story?</p>
@@ -17,6 +21,12 @@
 <script lang="ts">
 export default {
   props: ['texts', 'link'],
+
+  methods:{
+    isLetter(c: string) {
+      return c.match(/[a-zA-Z]/i);
+    }
+  }
 }
 </script>
 
@@ -28,8 +38,8 @@ export default {
 }
 
 @font-face {
-  font-family: "mevno1";
-  src: local("mevno1"),
+  font-family: "GenzschInitials";
+  src: local("GenzschInitials"),
     url(@/fonts/GenzschInitials-7oBK.ttf) format("truetype");
 }
 
@@ -52,12 +62,12 @@ span.initial {
   color: rgb(148, 0, 30);
   float: left;
   line-height: 75%;
-  margin-top: 5px;
-  margin-right: 1px;
+  margin-top: 8px;
+  margin-right: 4px;
   /* width: 1em; */
   font-size: 475%;
   font-weight: lighter;
-  font-family: mevno1;
+  font-family: GenzschInitials;
   /*Glowing ghostly letter*/
   /* color: rgb(201, 253, 236);
   text-shadow: 0 0 15px rgba(45, 224, 180, 0.8),
@@ -68,7 +78,7 @@ p {
   font-family: uwch;
   font-weight: lighter;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 21px;
   padding-left: 2%;
   padding-right: 2%;
 }

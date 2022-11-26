@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h4 class="text star" >&#10022;</h4>
+        <h4 class="text star" style="margin-top: 40px;margin-bottom: 20px;">&#10022;</h4>
         <h2 class="title">{{ title }}</h2>
         <h5 class="author">{{ author }}</h5>
         <!-- <h5 class="author">by Squidmanescape</h5> -->
         <h5 class="upvotes"><i class="fa fa-thumbs-up"></i> {{ upvotes }}</h5>
-        <h4 class="text star" >&#10022;</h4>
+        <h4 class="text star" style="margin-bottom: 40px; margin-top: 20px;">&#10022;</h4>
     </div>
 </template>
 
@@ -16,6 +16,12 @@ export default{
 </script>
 
 <style>
+@font-face {
+  font-family: "Rediviva";
+  src: local("Rediviva"),
+   url(@/fonts/Rediviva.ttf) format("truetype");
+}
+
 .text{
   color: rgb(95, 95, 95);
   /* background-color: black; */
@@ -29,6 +35,9 @@ export default{
   color: gray;
   margin-top: 12px;
   margin-bottom: 12px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  font-family: Rediviva;
 }
 
 h2{
