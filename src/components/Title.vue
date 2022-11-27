@@ -4,9 +4,9 @@
         <h1 class="title">The Midnight Paper</h1>
         <hr>
         <div class="volumeInfo">
-          <h4 class="text">VOL. 1</h4>
+          <h4 class="text mobile-display">VOL. 1</h4>
           <h4 class="text">{{ date }}</h4>
-          <h4 class="text">Price: Free</h4>
+          <h4 class="text mobile-display">Price: Free</h4>
         </div>
         <hr style="margin-bottom: 25px;">
     </div>
@@ -32,18 +32,7 @@ export default{
 }
 </script>
 
-<style scoped>
-@font-face {
-  font-family: "FaithCollapsing";
-  src: local("FaithCollapsing"),
-   url(@/fonts/Faith-Collapsing.ttf) format("truetype");
-}
-
-.titleSection{
-  width: 95%;
-  margin: auto;
-}
-
+<style>
 .volumeInfo{
   display: flex;
   justify-content: space-between;
@@ -58,6 +47,19 @@ h1.title{
   margin-top: 15px;
   margin-bottom: 15px;
   user-select: none;
+}
+</style>
+
+<style scoped>
+@font-face {
+  font-family: "FaithCollapsing";
+  src: local("FaithCollapsing"),
+   url(@/fonts/Faith-Collapsing.ttf) format("truetype");
+}
+
+.titleSection{
+  width: 95%;
+  margin: auto;
 }
 
 h4{

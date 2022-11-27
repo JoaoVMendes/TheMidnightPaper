@@ -19,7 +19,7 @@
       <transition enter-active-class="animate__animated animate__bounceIn" 
                   leave-active-class="animate__animated animate__zoomOut" 
                   mode="out-in" appear>
-        <button v-if="showBackTop" class="backTop" @click="backTop" title="Back to the top">
+        <button v-if="showBackTop" class="backTop button-grow tablet-display mobile-display" @click="backTop" title="Back to the top">
             <i class="fa fa-chevron-up"></i>
         </button>
       </transition>
@@ -80,33 +80,7 @@ export default{
 }
 </script>
 
-<style scoped>
-/* @font-face {
-  font-family: "Wicca";
-  src: local("Wicca"),
-   url(./fonts/wiccanways.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Witch";
-  src: local("Witch"),
-   url(./fonts/Witch-of-Thebes.ttf) format("truetype");
-} */
-.text{
-  color: rgb(95, 95, 95);
-  /* background-color: black; */
-}
-
-p{
-  font-family: uwch;
-  font-weight: lighter;
-  font-size: 15px;
-  line-height: 16px;
-  padding-left: 2%;
-  padding-right: 2%;
-  text-align: center;
-}
-
+<style>
 .scroll{
   background-color: rgb(5, 5, 5);
   margin: 20px 20px 20px 20px;
@@ -128,6 +102,35 @@ p{
   padding-bottom: 20px;
   padding-left: 20px;
 }
+</style>
+
+<style scoped>
+/* @font-face {
+  font-family: "Wicca";
+  src: local("Wicca"),
+   url(./fonts/wiccanways.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Witch";
+  src: local("Witch"),
+   url(./fonts/Witch-of-Thebes.ttf) format("truetype");
+} */
+
+.text{
+  color: rgb(95, 95, 95);
+  /* background-color: black; */
+}
+
+p{
+  font-family: uwch;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 16px;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
+}
 
 .backTop{
   position: fixed;
@@ -144,6 +147,16 @@ p{
   height: 45px;
   bottom: 15px;
   right: 48.25%;
+  /* margin: auto; */
   z-index: 1;
+}
+
+.button-grow {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-grow:hover {
+  transform: scale(1.1);
 }
 </style>

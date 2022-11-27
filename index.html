@@ -18,4 +18,69 @@
 body{
   background-color:rgb(39, 39, 39);
 }
+
+/*The css code below if related to Reative Web Design (RWD)
+  This adapts the layout based on the device that's accessing the page */
+@media only screen and (max-width: 780px) {
+  [class*="journal"] {
+    column-count: 2;
+  }
+
+  h2.title {
+    font-size: 25px;
+  }
+
+  .tablet-display {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  [class*="journal"] {
+    column-count: 1;
+  }
+
+  [class*="scroll"] {
+    background-color: rgb(5, 5, 5);
+    margin: 2px 2px 2px 2px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.616);
+  }
+
+  [class*="border"] {
+    border-style: double;
+    border-color: gray;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+  }
+
+  h1.title {
+    color: gray;
+    text-align: center;
+    font-family: FaithCollapsing;
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    user-select: none;
+  }
+
+  h2.title {
+    font-size: 25px;
+  }
+
+  
+  div.volumeInfo{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mobile-display {
+    display: none;
+  }
+}
 </style>
