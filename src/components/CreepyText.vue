@@ -62,8 +62,8 @@ span.initial {
   color: rgb(148, 0, 30);
   float: left;
   line-height: 75%;
-  margin-top: 8px;
-  margin-right: 4px;
+  margin-top: 9px;
+  margin-right: 2px;
   /* width: 1em; */
   font-size: 475%;
   font-weight: lighter;
@@ -88,18 +88,20 @@ p.textRef {
 }
 
 a:link {
-  color: rgb(179, 179, 179);
+  color: rgb(189, 189, 189);
   background-color: transparent;
   text-decoration: none;
+  text-shadow: 0 0 15px rgba(141, 141, 141, 0.8),
+              0 0 15px rgba(255, 255, 255, 0.6);
 }
 
 a:visited {
-  color: rgb(49, 49, 49);
+  color: rgb(145, 145, 145);
   background-color: transparent;
 }
 
 a:hover {
-  color: rgb(243, 243, 243);
+  color: rgb(255, 255, 255);
   background-color: transparent;
   /*Glowing ghostly text*/
   /* color: rgb(191, 255, 223);

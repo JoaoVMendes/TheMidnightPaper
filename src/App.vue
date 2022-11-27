@@ -125,7 +125,7 @@ p{
   border-radius: 5px;
   padding-top: 40px;
   padding-right: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 20px;
 }
 
