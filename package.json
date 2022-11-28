@@ -10,8 +10,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "request": "^2.88.2",
+    "puppeteer": "^19.3.0",
     "vue": "^3.2.41"
   },
   "devDependencies": {

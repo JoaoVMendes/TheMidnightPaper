@@ -2,8 +2,8 @@
     <div>
         <h4 class="text star" style="margin-top: 40px;margin-bottom: 20px;">&#10022;</h4>
         <h2 class="title">{{ title }}</h2>
-        <h5 class="author">{{ author }}</h5>
-        <!-- <h5 class="author">by Squidmanescape</h5> -->
+        <h5 v-if="author != null" class="author">by <strong>{{ author }}</strong></h5>
+        <h5 v-else class="author">Unknown author</h5>
         <h5 class="upvotes"><i class="fa fa-thumbs-up"></i> {{ upvotes }}</h5>
         <h4 class="text star" style="margin-bottom: 40px; margin-top: 20px;">&#10022;</h4>
     </div>

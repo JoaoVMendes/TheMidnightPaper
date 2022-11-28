@@ -31,7 +31,7 @@
 import Title from '@/components/Title.vue'
 import CreepyInfo from '@/components/CreepyInfo.vue'
 import CreepyText from '@/components/CreepyText.vue'
-import CreepyPastas from '@/CreepyPastas.json'
+import CreepyPasta from '@/CreepyPasta.json'
 
 export default{
   components:{Title, CreepyInfo, CreepyText},
@@ -47,13 +47,12 @@ export default{
   data(){
     return{
       showBackTop: false,
-      jsonPost: CreepyPastas,
       bestPost:{
-        title: CreepyPastas[0].postTitle,
-        upvotes: CreepyPastas[0].postUpvotes,
-        author: 'Unknown author',
-        link: CreepyPastas[0].postUrl,
-        texts: CreepyPastas[0].postText,
+        title: CreepyPasta.title,
+        upvotes: CreepyPasta.upvotes,
+        author: CreepyPasta.author,
+        link: CreepyPasta.url,
+        texts: CreepyPasta.text,
       },
     }
   },
