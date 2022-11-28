@@ -47,6 +47,8 @@ h1.title{
   margin-top: 15px;
   margin-bottom: 15px;
   user-select: none;
+  text-shadow: 0 0 100px rgba(141, 141, 141, 0.8),
+              0 0 10px rgba(255, 255, 255, 0.6);
 }
 </style>
 

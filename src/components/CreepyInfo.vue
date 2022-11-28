@@ -38,6 +38,8 @@ export default{
   margin-right: 2.5%;
   margin-left: 2.5%;
   font-family: Rediviva;
+  text-shadow: 0 0 100px rgba(141, 141, 141, 0.8),
+              0 0 100px rgba(255, 255, 255, 0.6);
 }
 
 h2{
