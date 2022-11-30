@@ -13,7 +13,9 @@ async function crawl(){
     const url = await element.evaluate(el => el.href)
     
     //Open the top voted post page.
-    await page.goto(url)
+    await page.goto(url, {
+        waitUntil: 'networkidle2'
+    })
 
     //Get the post Title
     element = await page.$('#t3_z3ls5b > div > div._2FCtq-QzlfuN-SwVMUZMM3._2v9pwVh0VUYrmhoMv1tHPm.t3_z3ls5b > div.y8HYJ-y_lTUHkQIc1mdCq._2INHSNB8V5eaWp4P0rY_mE > div > h1')

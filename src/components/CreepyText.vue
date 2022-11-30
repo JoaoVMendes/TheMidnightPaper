@@ -68,6 +68,10 @@ span.initial {
   font-size: 475%;
   font-weight: lighter;
   font-family: GenzschInitials;
+  
+  /* text-shadow: 0 0 100px rgba(255, 57, 57, 0.8),
+              0 0 100px rgba(255, 113, 113, 0.6); */
+
   /*Glowing ghostly letter*/
   /* color: rgb(201, 253, 236);
   text-shadow: 0 0 15px rgba(45, 224, 180, 0.8),
