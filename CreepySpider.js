@@ -35,7 +35,7 @@ async function crawl(){
 
     //Get the text by paragraphs and save it into an array
     const postText = await page.evaluate(() =>{
-        const paragraphs = Array.from(document.querySelectorAll('._3xX726aBn29LDbsDtzr_6E._1Ap4F5maDtT1E1YuCiaO0r.D3IL3FD0RFy_mkKLPwL4 > div > p'), x => x.innerText)
+        const paragraphs = Array.from(document.querySelectorAll('._3xX726aBn29LDbsDtzr_6E._1Ap4F5maDtT1E1YuCiaO0r.D3IL3FD0RFy_mkKLPwL4 > div > p , ._3xX726aBn29LDbsDtzr_6E._1Ap4F5maDtT1E1YuCiaO0r.D3IL3FD0RFy_mkKLPwL4 > div > ol > li > p'), x => x.innerText)
         return paragraphs
     })
     //console.log(postText)
